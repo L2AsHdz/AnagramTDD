@@ -7,6 +7,14 @@ import static org.junit.jupiter.api.Assertions.*;
 class AnagramaTest {
 
     @Test
+    public void CheckNullWords(){
+        String word1 = null;
+        String word2 = null;
+
+        assertFalse(Anagrama.AnagramCheck(word1, word2));
+    }
+
+    @Test
     public void CheckEmptyWords(){
         var word1 = "";
         var word2 = "";

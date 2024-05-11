@@ -9,6 +9,7 @@ public class Anagrama {
 
     // Funcion que valida si dos palabras con letras minusculas son anagramas
     public static boolean AnagramCheck(String wordOne, String wordTwo){
+        if(wordOne == null || wordTwo == null) return false;
         if (wordOne.trim().isEmpty() || wordTwo.trim().isEmpty()) return false;
         if (wordOne.length() != wordTwo.length()) return false;
         if (wordOne.equals(wordTwo)) return false;
